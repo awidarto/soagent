@@ -12,9 +12,35 @@ var t = new twitter({
     access_token_secret: credentials.access_token_secret
 });
 
+var tracked = [
+    'Lion Air'
+    'Air Asia',
+    'Valuair',
+    'Jetstar',
+    'Tiger',
+    'Merpati',
+    'Mandala',
+    'Citilink',
+    'Telkomsel',
+    'Kartuhalo',
+    'Indosat',
+    'IM3',
+    'Matrix',
+    'M3',
+    'Excel',
+    'XL',
+    'Smartfren',
+    '3',
+    'Tri',
+    'Axis',
+    'Esia',
+    'PKS',
+    'Partai Keadilan Sejahtera'
+];
+
 t.stream(
     'statuses/filter',
-    { track: ['awesome', 'cool', 'rad', 'gnarly', 'groovy'] },
+    { track: tracked },
     function(stream) {
         stream.on('data', function(tweet) {
         	db.tweets.save( tweet, function(err, saved) {
