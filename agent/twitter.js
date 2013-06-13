@@ -13,7 +13,7 @@ var t = new twitter({
 });
 
 var tracked = [
-    'Lion Air'
+    'Lion Air',
     'Air Asia',
     'Valuair',
     'Jetstar',
