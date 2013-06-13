@@ -1,7 +1,7 @@
 var twitter = require('ntwitter');
 var credentials = require('./credentials.js');
 
-var databaseUrl = 'tweets'; // "username:password@example.com/mydb"
+var databaseUrl = 'soagent'; // "username:password@example.com/mydb"
 var collections = ['tweets']
 var db = require('mongojs').connect(databaseUrl, collections);
 
