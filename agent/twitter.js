@@ -30,7 +30,6 @@ var tracked = [
     'Excel',
     'XL',
     'Smartfren',
-    '3',
     'Tri',
     'Axis',
     'Esia',
